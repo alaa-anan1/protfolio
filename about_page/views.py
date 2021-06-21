@@ -15,3 +15,4 @@ def trip_index(request):
         'trip': trip
     }
     return render(request, 'about_index.html', context)
+

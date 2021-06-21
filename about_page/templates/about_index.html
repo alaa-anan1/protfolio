@@ -2,13 +2,75 @@
 {% load static %}
 {% block page_content %}
 
+<head>
+  <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Complete Bootstrap 4 Website Layout</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+  <title>About me</title>
+
+  <style>
+
+    .button {
+      background-color: aqua;
+    }
+    .social a {
+      font-size: 1.5cm;
+      padding: 1cm;
+    }
+    .fa-instagram {
+      color: palevioletred;
+    }
+    .fa-facebook {
+      color: #3b5998;
+    }
+    .fa-linkedin {
+      color: #3b5998;
+    }
+    .fa-twitter {
+      color: #00aced;
+    }
+    .fa-envelope {
+      color: grey;
+    }
+    .fa-mobile {
+      color: palevioletred;
+    }
+    .fa-github {
+      color: black;
+    }
+    .fa-envelope:hover,
+    .fa-facebook:hover,
+    .fa-instagram:hover,
+    .fa-linkedin:hover,
+    .fa-mobile:hover,
+    .fa-twitter:hover,
+    .fa-github:hover {
+      color: rgb(50, 255, 228);
+    }
+    
+  </style>
+
+
+
+</head>
+
+
 <div style="margin: 0 0 0 0; padding: 0 0 0 0;">
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="{% url 'project_index' %}">Alaa Anan Portfolio</a>
+        <a class="navbar-brand" href="{% url 'project_index' %}" style="color: palevioletred; font-family: century gothic; font-weight: bold;">Alaa Anan Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -16,7 +78,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="{% url 'project_index' %}">Home</a>
+              <a class="nav-link" href="{% url 'project_index' %}">Projects</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="{% url 'blog_index' %}">Blog</a>
@@ -28,24 +90,47 @@
         </div>
     </div>
 
-</nav>
+  </nav>
 
+  {% load static %}
   
-  <title>About me</title>
-  <body>
+
+
+  <div>
     <div style="display: flex; align-items: center;">
-    <div style="background-color: pink; height: 790px; width: 1500px;  color: white; font-family: century gothic; display: grid; align-items: center; padding: 100px 50px 100px 50px; justify-content: space-between;">
-      <h1 style="margin: 30px 50px 0 50px;">Junior Web Developer</h1>
+    <div style="height: 790px; width: 1500px;  color: black; font-family: century gothic; display: grid; align-items: center; padding: 100px 50px 100px 50px; justify-content: space-between; ">
+      <h1 style="margin: 30px 50px 0 50px; font-weight: bold; color:palevioletred;">Junior Web Developer</h1>
       <p style="margin: 0 50px 30px 50px;">
         Lorem ipsum dolor sit amet . The graphic and typographic operators know this well, in reality all the professions dealing with the universe of communication have a stable relationship with these words, but what is it? Lorem ipsum is a dummy text without any sense.
       </p>
-      <button onclick="window.location.href='https://github.com/cyb3r-champ'" style="width: 100px; height:50px; background-color: lightcoral; color: rgb(248, 219, 224); font-weight: bold; border: solid 3px lightcoral; border-radius: 20px; margin: 0 200px 0 250px; ">GitHub</button>
+      <button onclick="window.location.href='https://github.com/cyb3r-champ'" type="button" class="button" style="width: 100px; height:50px; background-color: palevioletred; color: white; font-weight: bold; border: solid 3px palevioletred; border-radius: 20px; margin: 0 200px 0 250px; box-shadow: 0 10px 10px lightblue; "  >GitHub</button>
     </div>
     <div style="background-color: white; height: 600px; width: 1500px; margin-right: 0; display: grid; align-items: center; padding: 100px 50px 100px 50px; justify-content: space-between; display: flex; align-items: center;">
-      <img src="my-logo.jpg" alt=""  style="height: 400px; width: 400px; margin: 0 100px 0 150px; border-radius: 0 100px 0 100px; border: solid 10px pink; ">
+      <img src="https://scontent.fjed6-1.fna.fbcdn.net/v/t1.6435-9/195495019_437720170902890_3991787150401615495_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=f21ZtY8LTTkAX_udFhd&_nc_ht=scontent.fjed6-1.fna&oh=57eb7b261544124098dd67ef183f19f3&oe=60D55E4F" alt=" img not found "  style="height: 500px; width: 500px; margin: 0 100px 0 150px;  ">
     </div>
   
+  </div>
 
-  </body>
+ 
+
+  <div class="container-fluid padding">
+  <div class="row text-center padding">
+    <div class="col-12">
+      <h2 style="color: palevioletred; font-family: century gothic; font-weight: bold;">Contact Me</h2>
+    </div>
+    <div class="col-12 social padding">
+      <a href="https://www.instagram.com/codewid_ailo/"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/codewidailo/events/?ref=page_internal"><i class="fab fa-facebook"></i></a>
+      <a href="https://github.com/cyb3r-champ"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/alaa-anan-0b4590214/"><i class="fab fa-linkedin"></i></a>
+      <a href="https://mobile.twitter.com/Lilo11702532"><i class="fab fa-twitter"></i></a>
+      <a href="mailto:alaa.anan255@gmail.com"><i class="fa fa-envelope"></i></a>
+      <a href="tel:+966 53 553 3680 "><i class="fa fa-mobile"></i></a>
+    </div>
+  </div>
+  </div>
+
 </div>
+
+
   {% endblock %}

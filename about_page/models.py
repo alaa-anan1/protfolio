@@ -1,11 +1,12 @@
 from django.db import models
 
+
 # Create your models here.
 
 class About(models.Model):
     title = models.CharField(max_length=100)
     disceiption = models.TextField()
-    image = models.FilePathField(path="")
+    image = models.FilePathField(path="/img")
 
 
 class Trip(models.Model):
@@ -16,5 +17,10 @@ class Trip(models.Model):
         unique=True, 
         blank=True
     )
+
+
+
+
+
 
 # NOTESS FOR LATER ::::  make a new model for the image and delete the object from About and makemigtations --> migrate 
